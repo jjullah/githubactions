@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Ubuntu_Host_Upgrade
 
 # Controls when the workflow will run
 on:
@@ -28,6 +28,7 @@ jobs:
         run: | 
           echo Hello, world!
           sudo apt-get update
+          sudo apt-get upgrade
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
